@@ -84,13 +84,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Aaron Cai blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/03/index.html">
+<meta name="description" content="vue和react中都用到了vdom，其中的好处就是大大提升渲染的速度。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于vdom">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/关于vdom/index.html">
 <meta property="og:site_name" content="Aaron Cai blog">
+<meta property="og:description" content="vue和react中都用到了vdom，其中的好处就是大大提升渲染的速度。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-11T14:26:25.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aaron Cai blog">
+<meta name="twitter:title" content="关于vdom">
+<meta name="twitter:description" content="vue和react中都用到了vdom，其中的好处就是大大提升渲染的速度。">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/03/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/11/关于vdom/">
 
 
 
 
 
-  <title> 归档 | Aaron Cai blog </title>
+  <title> 关于vdom | Aaron Cai blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -145,7 +149,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,64 +231,145 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 5 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/关于vdom/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Aaron Cai">
+    <meta itemprop="description" content>
+    <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/25129522?v=3&u=cd86b20f311aa0ae7f091037a8d3f00cd32f7ee1&s=400">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Aaron Cai blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Aaron Cai blog" src>
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                关于vdom
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-11T22:15:05+08:00">
+                2019-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <p>vue和react中都用到了vdom，其中的好处就是大大提升渲染的速度。</p>
+<a id="more"></a>
+<p>一个div就包括几十个属性，所以渲染dom非常耗性能，执行js代码的消耗远远低于渲染dom，所以当数据发生改变时，vdom只渲染改变的部分，而不会全部更新。<br>vue的vdom模块借鉴了snabbdom，snabbdom包含了两个主要方法，一个是生成vnode的h(),另外是将vnode渲染成真实dom的pacth()，而diff算法是snabbdom中计算新旧vnode的核心，diff算法又是Linux中的一个命令，用于比较两个文件中的差异，工作中还有一个较多的应用场景是git diff，用来比较于上一个版本的差异。</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/06/哆啦A梦/" rel="next" title="用html+css画一个哆啦A梦">
+                <i class="fa fa-chevron-left"></i> 用html+css画一个哆啦A梦
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/06/chromeExp/" itemprop="url">
-              
-                <span itemprop="name">震惊，99%的人都不知道chrome还能这样用</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-03-06T22:19:32+08:00" content="2017-03-06">
-          03-06
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -292,6 +377,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -485,11 +574,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
@@ -522,6 +609,10 @@
 
   
 
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
   
 
 
