@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="Aaron Cai blog">
 <meta property="og:description" content="慕课网设计笔记学习笔记。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-21T14:04:30.240Z">
+<meta property="og:updated_time" content="2019-05-22T15:15:08.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式笔记">
 <meta name="twitter:description" content="慕课网设计笔记学习笔记。">
@@ -318,7 +318,13 @@
       
         <p>慕课网设计笔记学习笔记。</p>
 <a id="more"></a>
-<p>1.1 设计模式五大设计原则</p>
+<p>1.1 设计模式五大设计原则<br>1.单一职责<br>2.里式替换<br>3.依赖倒置<br>4.接口隔离<br>5.迪米特法则<br>6.开闭原则</p>
+<p>工厂模式<br>将new操作单独封装，用于返回类的实例<br>案例：</p>
+<blockquote>
+<p>class JQuery {<br>    constructor(selector) {<br>        let slice = Array.prototype.slice;<br>        let dom = slice.call(document.querySelectorAll(selector));<br>        for (let i = 0; i &lt; dom.length; i++) {<br>            const item = dom[i];<br>            this[i] = item;<br>        }<br>        this.length = dom.length;<br>        this.selector = selector || “”;<br>    }<br>}</p>
+<p>window.$ = function(selector) {<br>    return new JQuery(selector)<br>}</p>
+<p>let p = $(“p”);<br>console.log(p);<br>jquery实例化<br>React.createElement()<br>vue异步组件</p>
+</blockquote>
 
       
     </div>
